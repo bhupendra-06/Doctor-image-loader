@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+  position: absolute;
+  top: 20px;
+}
+/* For the blue horizontal line after the heading */
+h1::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #7bd3ea;
+  position: absolute;
+  bottom: -10px;
+}
+h1, h1::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+#doctorContainer {
+  margin-block: 5vh;
+  margin-inline: auto;
+  padding-top: 100px;
+  width: 80%;
+  /* height: 90vh; */
+  display: flex;
+  flex-wrap: wrap;
+  /* overflow-x: auto;
+  white-space: wrap; */
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(128, 128, 128, 0.516);
+  border-radius: 5px;
+  background-color: #f6f7c44a;
+  position: relative;
+}
+.doctor-card {
+  margin: 10px;
+  /* padding: 10px; */
+  width: 200px;
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #7bd4ea2d;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+.doctor-card:hover {
+  background-color: #7bd3ea;
+  box-shadow: 2px 2px 5px 2px gray;
+  scale: 1.01;
+}
+.doctor-card img {
+  border-radius: 5px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
